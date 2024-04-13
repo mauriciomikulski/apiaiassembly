@@ -2250,24 +2250,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Atila Bezerra\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\gabriel.pontes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
+      "projectUniqueName": "D:\\Estudos\\apiaiassembly\\fdassembly.csproj",
       "projectName": "fdassembly",
-      "projectPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
-      "packagesPath": "C:\\Users\\Atila Bezerra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\obj\\",
+      "projectPath": "D:\\Estudos\\apiaiassembly\\fdassembly.csproj",
+      "packagesPath": "C:\\Users\\gabriel.pontes\\.nuget\\packages\\",
+      "outputPath": "D:\\Estudos\\apiaiassembly\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Atila Bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\gabriel.pontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2339,7 +2334,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

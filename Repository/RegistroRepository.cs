@@ -15,6 +15,31 @@ namespace fdassembly.Repository
         {
             return await _context.Registros.ToListAsync();
         }
+
+        //public async Task<List<UnidadeDetails>> GetAllDetails()
+        //{
+        //    var response = await _context.Registros.Include(r => r.Unidade).ToListAsync();
+
+        //    List<UnidadeDetails> unidadeDetails = new List<UnidadeDetails>();
+
+        //    response.ForEach(r =>
+        //    {
+        //        unidadeDetails.Add(new UnidadeDetails()
+        //        {
+        //            Id = r.Id,
+        //            Nome = r.Unidade.Nome,
+        //            LiveCamURL = r.Unidade.LiveCamURL,
+        //            Locate = r.Unidade.Locate,
+        //            MaxLimit = r.Unidade.MaxLimit,
+        //            MinLimit = r.Unidade.MinLimit,
+        //            FaceDetecteds = r.Faces,
+        //            DataHora = r.DataHora
+        //        });
+        //    });
+
+        //    return unidadeDetails;
+        // }
+
         public async Task<Registros> Save(Registros registros)
         {
             if (registros.Id == Guid.Empty)

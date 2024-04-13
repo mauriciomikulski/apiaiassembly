@@ -9,6 +9,6 @@ namespace fdassembly.Models
         public string LiveCamURL { get; set; }
         public int MaxLimit { get; set; }
         public int MinLimit { get; set; }
-
+        public virtual List<Registros> Registros { get; set; }
     }
 }

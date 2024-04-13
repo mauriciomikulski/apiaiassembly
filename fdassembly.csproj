@@ -26,6 +26,10 @@
     <PackageReference Include="xFFmpeg.NET" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy /y &quot;$(ProjectDir)\ffmpeg.exe&quot; &quot;$(TargetDir)&quot;" />
   </Target>

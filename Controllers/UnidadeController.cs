@@ -24,6 +24,18 @@ namespace fdassembly.Controllers
             return await _unidadeRepository.GetAll();
         }
 
+        [HttpGet("GetRegisters")]
+        public async Task<ActionResult<List<Unidade>>> GetRegisters()
+        {
+            return await _unidadeRepository.GetAllRegisters();
+        }
+
+        [HttpGet("GetDetails")]
+        public async Task<ActionResult<List<UnidadeDetails>>> GetDetails()
+        {
+            return await _unidadeRepository.GetAllDetails();
+        }
+
         [HttpPost]
         public async Task<ActionResult<Unidade>> Post([FromBody] Unidade unidade)
         {
