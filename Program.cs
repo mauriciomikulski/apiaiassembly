@@ -2,13 +2,11 @@ using fdassembly.Repository;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using fdassembly.Interfaces;
+using FFmpeg.NET;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,16 +17,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IUnidadeRepository, UnidadeRepository>();
 builder.Services.AddScoped<IRegistrosRepository, RegistroRepository>();
-
+builder.Services.AddSingleton<Engine>(provider =>
+{
+    return new Engine($"{AppDomain.CurrentDomain.BaseDirectory}ffmpeg.exe");
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
