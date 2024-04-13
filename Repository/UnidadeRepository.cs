@@ -43,6 +43,7 @@ namespace fdassembly.Repository
                 });
             }
 
+
             return detailsList;
         }
 
