@@ -26,8 +26,8 @@
     <PackageReference Include="xFFmpeg.NET" Version="6.0.0" />
   </ItemGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="xcopy /y &quot;$(ProjectDir)..\ffmpeg.exe&quot; &quot;$(TargetDir)&quot;" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y &quot;$(ProjectDir)\ffmpeg.exe&quot; &quot;$(TargetDir)&quot;" />
   </Target>
 
 </Project>
