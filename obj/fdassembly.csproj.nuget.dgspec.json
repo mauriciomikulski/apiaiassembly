@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj": {}
+    "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj": {
+    "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj",
+        "projectUniqueName": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
         "projectName": "fdassembly",
-        "projectPath": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj",
-        "packagesPath": "C:\\Users\\mauriciomikulski\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\obj\\",
+        "projectPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
+        "packagesPath": "C:\\Users\\Atila Bezerra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mauriciomikulski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Atila Bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,6 +65,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "xFFmpeg.NET": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -85,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

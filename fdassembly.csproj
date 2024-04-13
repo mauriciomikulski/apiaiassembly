@@ -23,6 +23,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="xFFmpeg.NET" Version="6.0.0" />
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="xcopy /y &quot;$(ProjectDir)..\ffmpeg.exe&quot; &quot;$(TargetDir)&quot;" />
+  </Target>
 
 </Project>

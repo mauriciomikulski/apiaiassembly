@@ -869,6 +869,15 @@
             "rid": "win"
           }
         }
+      },
+      "xFFmpeg.NET/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FFmpeg.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FFmpeg.NET.dll": {}
+        }
       }
     }
   },
@@ -2214,6 +2223,20 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "xFFmpeg.NET/6.0.0": {
+      "sha512": "ni4wAdSO2eIVCEX48cJbU4jXUGVtBt+nYtZiwmHCoqWN3WRahP5vL/wrP2Pxjw7PETwFmj8mQfrmt36J+fR77A==",
+      "type": "package",
+      "path": "xffmpeg.net/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net5.0/FFmpeg.NET.dll",
+        "xffmpeg.net.6.0.0.nupkg.sha512",
+        "xffmpeg.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -2222,27 +2245,29 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.29",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
       "Microsoft.Extensions.DependencyInjection >= 6.0.1",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "xFFmpeg.NET >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauriciomikulski\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Atila Bezerra\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj",
+      "projectUniqueName": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
       "projectName": "fdassembly",
-      "projectPath": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\fdassembly.csproj",
-      "packagesPath": "C:\\Users\\mauriciomikulski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauriciomikulski\\source\\repos\\fdassembly\\obj\\",
+      "projectPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\fdassembly.csproj",
+      "packagesPath": "C:\\Users\\Atila Bezerra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Atila Bezerra\\source\\apiaiassembly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mauriciomikulski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Atila Bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2289,6 +2314,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "xFFmpeg.NET": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
@@ -2310,7 +2339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
