@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Server=tcp:bdhack01.database.windows.net,1433;InitialCatalog=db-assembly;Encrypt=True;TrustServerCertificate=False;ConnectionTimeout=30;Authentication=\"ActiveDirectoryDefault\";",
+      "dynamicId": null
+    }
+  }
+}
